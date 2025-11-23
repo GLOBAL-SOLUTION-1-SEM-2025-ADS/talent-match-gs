@@ -5,6 +5,7 @@ import Developers from "../pages/mandatory/Developers";
 import About from "../pages/mandatory/About";
 import Sac from "../pages/mandatory/Sac";
 import Faq from "../pages/mandatory/Faq";
+
 import Job from "../pages/app/Job";
 import Upload from "../pages/app/Upload";
 import History from "../pages/app/History";
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "developers", element: <Developers /> },
       { path: "faq", element: <Faq /> },
       { path: "sac", element: <Sac /> },
+      
       { path: "vaga", element: <Job /> },
       { path: "upload", element: <Upload /> },
       { path: "historico", element: <History /> },
