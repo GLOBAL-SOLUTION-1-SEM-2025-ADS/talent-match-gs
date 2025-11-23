@@ -72,7 +72,7 @@ export default function Historico() {
       min-h-[90vh]"
     >
       <div className="max-w-6xl mx-auto space-y-8">
-        {/* Título + Voltar */}
+        
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
           <div className="flex items-start gap-3">
             <Link
@@ -117,7 +117,7 @@ export default function Historico() {
           </div>
         </div>
 
-        {/* Filtro */}
+        
         <div
           className="bg-white dark:bg-gray-900 
           border border-blue-100 dark:border-gray-700 
@@ -133,7 +133,7 @@ export default function Historico() {
           />
         </div>
 
-        {/* Lista */}
+        
         {filtrados.length === 0 ? (
           <div
             className="bg-white dark:bg-gray-900 

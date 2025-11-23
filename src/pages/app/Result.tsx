@@ -89,7 +89,7 @@ export default function Resultado() {
 
       <div className="max-w-6xl mx-auto space-y-10">
 
-        {/* HEADER */}
+        
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
 
           <div className="space-y-2">
@@ -139,10 +139,9 @@ export default function Resultado() {
           </div>
         </div>
 
-        {/* CONTEÚDO */}
+      
         <div className="grid lg:grid-cols-3 gap-6">
-
-          {/* COLUNA PRINCIPAL */}
+       
           <div className="lg:col-span-2 space-y-6">
 
             <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-blue-100 dark:border-gray-700 p-6 md:p-8 space-y-5">
@@ -171,7 +170,6 @@ export default function Resultado() {
                 </p>
               </div>
 
-              {/* Pontos fortes / riscos */}
               <div className="grid md:grid-cols-2 gap-4">
 
                 <div className="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-100 dark:border-emerald-800 rounded-2xl p-4">
@@ -207,7 +205,6 @@ export default function Resultado() {
             </div>
           </div>
 
-          {/* COLUNA LATERAL */}
           <div className="space-y-4">
 
             <div className="bg-white dark:bg-gray-800 border border-blue-100 dark:border-gray-700 rounded-2xl shadow-md p-6">

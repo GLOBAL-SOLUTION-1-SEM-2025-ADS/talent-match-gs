@@ -9,24 +9,24 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 h-16 backdrop-blur-md bg-white/30 dark:bg-gray-900/70 border-b border-gray-200 dark:border-gray-800 shadow-sm transition-colors">
+      <header className="sticky top-0 z-40 h-16 backdrop-blur-md bg-white/30 dark:bg-indigo-950/75 border-b border-gray-200 dark:border-indigo-800 shadow-sm transition-colors">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
           <div
-            className="flex items-center gap-2 cursor-pointer"
+            className="flex items-center gap-2 cursor-pointer text-blue-900 dark:text-indigo-100 transition-colors"
             onClick={() => navigate("/")}
           >
-            <span className="text-lg sm:text-xl font-bold text-blue-900">
+            <span className="text-lg sm:text-xl font-bold">
               TalentMatch
             </span>
           </div>
 
-          <nav className="hidden md:flex items-center gap-6 text-sm text-gray-700">
+          <nav className="hidden md:flex items-center gap-6 text-sm text-blue-800 dark:text-indigo-100 transition-colors">
             <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "text-blue-800 dark:text-indigo-200 font-semibold"
-                  : "hover:text-blue-700 dark:hover:text-indigo-200"
+                  ? "text-blue-900 dark:text-indigo-50 font-semibold"
+                  : "hover:text-blue-700 dark:hover:text-indigo-200 font-medium"
               }
             >
               Início
@@ -35,8 +35,8 @@ export default function Header() {
               to="/about"
               className={({ isActive }) =>
                 isActive
-                  ? "text-blue-800 dark:text-indigo-200 font-semibold"
-                  : "hover:text-blue-700 dark:hover:text-indigo-200"
+                  ? "text-blue-900 dark:text-indigo-50 font-semibold"
+                  : "hover:text-blue-700 dark:hover:text-indigo-200 font-medium"
               }
             >
               Sobre
@@ -45,8 +45,8 @@ export default function Header() {
               to="/faq"
               className={({ isActive }) =>
                 isActive
-                  ? "text-blue-800 dark:text-indigo-200 font-semibold"
-                  : "hover:text-blue-700 dark:hover:text-indigo-200"
+                  ? "text-blue-900 dark:text-indigo-50 font-semibold"
+                  : "hover:text-blue-700 dark:hover:text-indigo-200 font-medium"
               }
             >
               FAQ
@@ -55,8 +55,8 @@ export default function Header() {
               to="/sac"
               className={({ isActive }) =>
                 isActive
-                  ? "text-blue-800 dark:text-indigo-200 font-semibold"
-                  : "hover:text-blue-700 dark:hover:text-indigo-200"
+                  ? "text-blue-900 dark:text-indigo-50 font-semibold"
+                  : "hover:text-blue-700 dark:hover:text-indigo-200 font-medium"
               }
             >
               SAC
@@ -65,8 +65,8 @@ export default function Header() {
               to="/developers"
               className={({ isActive }) =>
                 isActive
-                  ? "text-blue-800 dark:text-indigo-200 font-semibold"
-                  : "hover:text-blue-700 dark:hover:text-indigo-200"
+                  ? "text-blue-900 dark:text-indigo-50 font-semibold"
+                  : "hover:text-blue-700 dark:hover:text-indigo-200 font-medium"
               }
             >
               Desenvolvedores
