@@ -1,7 +1,8 @@
-import github from "../assets/github.png";
-import linkedIn from "../assets/linkedin.png";
-import ana from "../assets/ana.png";
-import gui from "../assets/gui.png";
+import github from "../../assets/github.png";
+import linkedIn from "../../assets/linkedIn.png";
+import ana from "../../assets/ana.png";
+import gui from "../../assets/gui.jpeg";
+
 
 
 const Developers = () => {
@@ -30,6 +31,7 @@ const Developers = () => {
       <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-10">
         Desenvolvedores
       </h2>
+      <p className="text-xl  text-center text-gray-500 mb-10">Conheça a equipe por trás do <span className="font-bold">TalentMatch</span>, sua plataforma de análise de currículos inteligente</p>
 
       <section className="grid gap-8">
         {integrantes.map((dev, index) => (
