@@ -66,8 +66,8 @@ export default function Resultado() {
   const dataFormatada = new Date(data).toLocaleString("pt-BR");
 
   return (
-    <section className="px-4 md:px-10 py-16 bg-gradient-to-br from-blue-50 via-white to-indigo-50 min-h-[90vh]">
-      <div className="max-w-6xl mx-auto space-y-10">
+      <section className="px-4 md:px-10 py-16 bg-gradient-to-br from-blue-50 via-white to-indigo-50 min-h-[90vh]">
+        <div className="max-w-6xl mx-auto space-y-10">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wide bg-white border border-blue-100 text-blue-800 rounded-full shadow-sm">
