@@ -67,7 +67,7 @@ export default function Header() {
             <Button
               variant="primary"
               className="text-sm"
-              onClick={() => navigate("/dashboard")}
+              onClick={() => navigate("/vaga")}
             >
               Realizar analise
             </Button>
@@ -134,10 +134,10 @@ export default function Header() {
           className="mt-2"
           onClick={() => {
             setMenuOpen(false);
-            navigate("/dashboard");
+            navigate("/vaga");
           }}
         >
-          Acessar Painel
+          Realizar análise
         </Button>
 
         <button
