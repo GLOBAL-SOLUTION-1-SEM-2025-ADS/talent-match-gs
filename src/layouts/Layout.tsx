@@ -2,7 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-export default function PublicLayout() {
+export default function Layout() {
   const location = useLocation();
   const hideHeaderRoutes = ["/vaga", "/upload", "/analise"];
   const hideHeader = hideHeaderRoutes.some((route) =>
