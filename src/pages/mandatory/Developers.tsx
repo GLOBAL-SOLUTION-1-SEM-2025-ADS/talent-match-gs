@@ -9,6 +9,7 @@ const Developers = () => {
   const integrantes = [
     {
       nome: "Ana Flavia de Freitas",
+      funcao:"Estudante de Analise e Desenvolvimento de Sistemas" ,
       rm: "565559",
       turma: "1TDSPK",
       linkedin: "https://www.linkedin.com/in/ana-fl%C3%A1via-de-freitas/",
@@ -17,6 +18,7 @@ const Developers = () => {
     },
     {
       nome: "Luis Guilherme Borges Silva",
+      funcao:"Estudante de Analise e Desenvolvimento de Sistemas" ,
       rm: "566548",
       turma: "1TDSPK",
       linkedin: "https://www.linkedin.com/in/luis130505/",
@@ -49,6 +51,7 @@ const Developers = () => {
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {dev.nome}
               </h3>
+              <p className="text-sm text-gray-500 mb-4">{dev.funcao}</p>
               <p className="text-gray-600">
                 <strong>RM:</strong> {dev.rm} | <strong>Turma:</strong>{" "}
                 {dev.turma}
