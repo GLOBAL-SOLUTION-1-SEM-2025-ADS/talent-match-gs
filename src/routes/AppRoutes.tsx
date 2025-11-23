@@ -25,7 +25,6 @@ const router = createBrowserRouter([
       { path: "analise/:id", element: <Result /> },
     ],
   },
-
 ]);
 
 export default router;

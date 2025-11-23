@@ -28,7 +28,7 @@ export default function Faq() {
       resposta:
         "Os currículos são processados de forma segura e os dados podem ser salvos para consulta futura, permitindo comparar múltiplos candidatos para a mesma vaga.",
     },
-    
+
     {
       pergunta: "Posso cadastrar minhas próprias vagas?",
       resposta:
@@ -40,7 +40,6 @@ export default function Faq() {
       resposta:
         "Sim, nossa IA foca apenas em competências técnicas e experiências relevantes, eliminando fatores subjetivos e ajudando a reduzir viés inconsciente no processo de seleção.",
     },
-  
   ];
 
   return (

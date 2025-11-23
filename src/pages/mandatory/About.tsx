@@ -72,22 +72,28 @@ export default function About() {
             <div className="md:col-span-2 bg-white/10 border-t md:border-t-0 md:border-l border-white/20 p-10 md:p-14 space-y-6">
               <h3 className="text-2xl font-semibold">Nossa essência</h3>
               <p className="text-white/80">
-                Cada decisão de produto parte de um princípio simples: reduzir ruído
-                e aumentar clareza para recrutadores e candidatos. Nada de telas
-                complexas ou processos opacos.
+                Cada decisão de produto parte de um princípio simples: reduzir
+                ruído e aumentar clareza para recrutadores e candidatos. Nada de
+                telas complexas ou processos opacos.
               </p>
               <div className="space-y-4 text-white/90">
                 <div className="bg-white/10 border border-white/15 rounded-2xl p-4 flex items-start gap-3">
                   <span className="mt-1 h-2 w-2 rounded-full bg-emerald-300" />
-                  <p className="font-medium">Avaliações transparentes com critérios visíveis.</p>
+                  <p className="font-medium">
+                    Avaliações transparentes com critérios visíveis.
+                  </p>
                 </div>
                 <div className="bg-white/10 border border-white/15 rounded-2xl p-4 flex items-start gap-3">
                   <span className="mt-1 h-2 w-2 rounded-full bg-amber-300" />
-                  <p className="font-medium">IA que explica o “porquê” de cada recomendação.</p>
+                  <p className="font-medium">
+                    IA que explica o “porquê” de cada recomendação.
+                  </p>
                 </div>
                 <div className="bg-white/10 border border-white/15 rounded-2xl p-4 flex items-start gap-3">
                   <span className="mt-1 h-2 w-2 rounded-full bg-sky-300" />
-                  <p className="font-medium">Fluxos enxutos para equipes enxutas.</p>
+                  <p className="font-medium">
+                    Fluxos enxutos para equipes enxutas.
+                  </p>
                 </div>
               </div>
               <div className="bg-white text-blue-900 rounded-2xl p-6 shadow-lg">
@@ -95,7 +101,8 @@ export default function About() {
                   O que nos guia
                 </p>
                 <p className="mt-2 text-lg font-semibold">
-                  Entregar tempo de volta para quem contrata e oportunidades para quem busca.
+                  Entregar tempo de volta para quem contrata e oportunidades
+                  para quem busca.
                 </p>
               </div>
             </div>
@@ -112,50 +119,53 @@ export default function About() {
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8 p-8 md:p-12">
             <div className="h-full rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-xl transition-all p-7 flex flex-col gap-4">
               <div className="w-12 h-12 bg-blue-50 text-blue-700 rounded-xl flex items-center justify-center text-2xl">
-                <img src={Mission} alt="missão" className="w-8 h-8"  />
+                <img src={Mission} alt="missão" className="w-8 h-8" />
               </div>
               <h3 className="text-2xl font-semibold mb-2 text-blue-900">
                 Nossa Missão
               </h3>
               <p className="text-gray-700 flex-1 leading-relaxed">
-                Revolucionar o recrutamento com tecnologia de ponta, tornando a seleção
-                de talentos mais eficiente, justa e precisa.
+                Revolucionar o recrutamento com tecnologia de ponta, tornando a
+                seleção de talentos mais eficiente, justa e precisa.
               </p>
             </div>
 
             <div className="h-full rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-xl transition-all p-7 flex flex-col gap-4">
               <div className="w-12 h-12 bg-blue-50 text-blue-700 rounded-xl flex items-center justify-center text-2xl">
-                <img src={Innovation} alt="inovação" className="w-8 h-8"/>
+                <img src={Innovation} alt="inovação" className="w-8 h-8" />
               </div>
               <h3 className="text-2xl font-semibold mb-2 text-blue-900">
                 Inovação
               </h3>
               <p className="text-gray-700 flex-1 leading-relaxed">
-                IA aplicada com propósito: automatizar a triagem e explicar cada recomendação de forma clara.
+                IA aplicada com propósito: automatizar a triagem e explicar cada
+                recomendação de forma clara.
               </p>
             </div>
 
             <div className="h-full rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-xl transition-all p-7 flex flex-col gap-4">
               <div className="w-12 h-12 bg-blue-50 text-blue-700 rounded-xl flex items-center justify-center text-2xl">
-                <img src={Trust} alt="confiança" className="w-8 h-8"/>
+                <img src={Trust} alt="confiança" className="w-8 h-8" />
               </div>
               <h3 className="text-2xl font-semibold mb-2 text-blue-900">
                 Confiança
               </h3>
               <p className="text-gray-700 flex-1 leading-relaxed">
-                Segurança de dados como padrão: privacidade, compliance e transparência em cada entrega.
+                Segurança de dados como padrão: privacidade, compliance e
+                transparência em cada entrega.
               </p>
             </div>
 
             <div className="h-full rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-xl transition-all p-7 flex flex-col gap-4">
               <div className="w-12 h-12 bg-blue-50 text-blue-700 rounded-xl flex items-center justify-center text-2xl">
-                <img src={Impact} alt="impacto" className="w-8 h-8"/>
+                <img src={Impact} alt="impacto" className="w-8 h-8" />
               </div>
               <h3 className="text-2xl font-semibold mb-2 text-blue-900">
                 Impacto
               </h3>
               <p className="text-gray-700 flex-1 leading-relaxed">
-                Resultados mensuráveis: menos tempo na triagem e contratações mais alinhadas ao perfil ideal.
+                Resultados mensuráveis: menos tempo na triagem e contratações
+                mais alinhadas ao perfil ideal.
               </p>
             </div>
           </div>

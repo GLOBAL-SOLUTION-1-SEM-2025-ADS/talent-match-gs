@@ -10,7 +10,7 @@ export interface AnaliseIA {
 
 export interface AnaliseComMeta {
   id: string;
-  data: string; 
+  data: string;
   vaga: string;
   analise: AnaliseIA;
 }

@@ -8,7 +8,9 @@ import FilterBar from "../../components/Filterbar";
 
 export default function Historico() {
   const [lista, setLista] = useState<AnaliseComMeta[]>([]);
-  const [status, setStatus] = useState<string | null>("Carregando histórico...");
+  const [status, setStatus] = useState<string | null>(
+    "Carregando histórico..."
+  );
   const [termo, setTermo] = useState("");
   const [dataInicial, setDataInicial] = useState("");
   const [dataFinal, setDataFinal] = useState("");
@@ -72,16 +74,17 @@ export default function Historico() {
               ←
             </Link>
             <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wide bg-white border border-blue-100 text-blue-800 rounded-full shadow-sm">
-              Histórico
-              <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
-            </div>
-            <h1 className="text-3xl md:text-4xl font-bold text-blue-900">
-              Pareceres anteriores
-            </h1>
-            <p className="text-gray-700">
-              Consulte e filtre análises já realizadas. Use termo de busca ou intervalo de datas.
-            </p>
+              <div className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wide bg-white border border-blue-100 text-blue-800 rounded-full shadow-sm">
+                Histórico
+                <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
+              </div>
+              <h1 className="text-3xl md:text-4xl font-bold text-blue-900">
+                Pareceres anteriores
+              </h1>
+              <p className="text-gray-700">
+                Consulte e filtre análises já realizadas. Use termo de busca ou
+                intervalo de datas.
+              </p>
             </div>
           </div>
           <div className="text-sm text-gray-600">

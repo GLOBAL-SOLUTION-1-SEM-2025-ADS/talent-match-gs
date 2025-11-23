@@ -1,8 +1,10 @@
 const BASE_URL =
   import.meta.env.VITE_API_URL || "https://talent-match-ia.onrender.com";
 
-
-async function request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
+async function request<T>(
+  endpoint: string,
+  options: RequestInit = {}
+): Promise<T> {
   const res = await fetch(BASE_URL + endpoint, options);
 
   const contentType = res.headers.get("Content-Type") || "";
@@ -20,7 +22,6 @@ async function request<T>(endpoint: string, options: RequestInit = {}): Promise<
     return res.json() as Promise<T>;
   }
 
-
   return {} as T;
 }
 
@@ -33,4 +34,3 @@ export const api = {
 };
 
 export default api;
-

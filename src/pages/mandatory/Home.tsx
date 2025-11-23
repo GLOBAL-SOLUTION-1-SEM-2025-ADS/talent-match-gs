@@ -23,7 +23,9 @@ export default function Home() {
         <div className="max-w-5xl mx-auto space-y-8 text-center lg:text-left">
           <div
             className={`space-y-6 transition duration-700 ease-out ${
-              heroReady ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"
+              heroReady
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-6"
             }`}
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wide bg-white border border-blue-100 text-blue-800 rounded-full shadow-sm">
@@ -34,22 +36,32 @@ export default function Home() {
               Auditor inteligente de currículos com IA confiável e transparente.
             </h1>
             <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto lg:mx-0">
-              Analise PDFs, compare com a vaga e receba pareceres claros sobre fit,
-              gaps e recomendações. Decisões mais rápidas, baseadas em dados, com
-              trilha de auditoria completa.
+              Analise PDFs, compare com a vaga e receba pareceres claros sobre
+              fit, gaps e recomendações. Decisões mais rápidas, baseadas em
+              dados, com trilha de auditoria completa.
             </p>
 
             <div className="grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto lg:mx-0">
               <div className="bg-white border border-blue-100 rounded-2xl p-4 shadow-sm">
-                <p className="text-xs uppercase tracking-wide text-blue-700">Tempo</p>
-                <p className="text-xl font-semibold text-blue-900">-60% triagem</p>
+                <p className="text-xs uppercase tracking-wide text-blue-700">
+                  Tempo
+                </p>
+                <p className="text-xl font-semibold text-blue-900">
+                  -60% triagem
+                </p>
               </div>
               <div className="bg-white border border-blue-100 rounded-2xl p-4 shadow-sm">
-                <p className="text-xs uppercase tracking-wide text-blue-700">Transparência</p>
-                <p className="text-xl font-semibold text-blue-900">Critérios visíveis</p>
+                <p className="text-xs uppercase tracking-wide text-blue-700">
+                  Transparência
+                </p>
+                <p className="text-xl font-semibold text-blue-900">
+                  Critérios visíveis
+                </p>
               </div>
               <div className="bg-white border border-blue-100 rounded-2xl p-4 shadow-sm">
-                <p className="text-xs uppercase tracking-wide text-blue-700">Escala</p>
+                <p className="text-xs uppercase tracking-wide text-blue-700">
+                  Escala
+                </p>
                 <p className="text-xl font-semibold text-blue-900">+500k CVs</p>
               </div>
             </div>
@@ -59,7 +71,9 @@ export default function Home() {
             <Link
               to="/vaga"
               className={`px-6 py-3 rounded-lg bg-indigo-600 text-white text-sm font-semibold shadow-md transition duration-600 ease-out ${
-                ctaReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+                ctaReady
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-2"
               }`}
             >
               Iniciar nova análise
@@ -67,7 +81,9 @@ export default function Home() {
             <Link
               to="/historico"
               className={`px-6 py-3 rounded-lg bg-white border border-blue-100 text-sm font-semibold text-blue-900 hover:bg-slate-50 shadow-sm transition duration-600 ease-out ${
-                secondaryCtaReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+                secondaryCtaReady
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-2"
               }`}
             >
               Ver histórico de pareceres
@@ -84,7 +100,8 @@ export default function Home() {
             </p>
             <h3 className="text-2xl font-bold text-blue-900">Como funciona</h3>
             <p className="text-gray-600">
-              Quatro passos para receber pareceres e registrar todo o histórico de análise.
+              Quatro passos para receber pareceres e registrar todo o histórico
+              de análise.
             </p>
           </div>
           <ol className="space-y-3 p-6 md:p-8 text-sm text-gray-800">
@@ -94,7 +111,9 @@ export default function Home() {
               </span>
               <div>
                 <p className="font-semibold text-blue-900">Descreva a vaga</p>
-                <p className="text-gray-600">Cole o perfil ou requisitos principais.</p>
+                <p className="text-gray-600">
+                  Cole o perfil ou requisitos principais.
+                </p>
               </div>
             </li>
             <li className="flex gap-3">
@@ -103,7 +122,9 @@ export default function Home() {
               </span>
               <div>
                 <p className="font-semibold text-blue-900">Envie o PDF</p>
-                <p className="text-gray-600">Faça upload do currículo do candidato.</p>
+                <p className="text-gray-600">
+                  Faça upload do currículo do candidato.
+                </p>
               </div>
             </li>
             <li className="flex gap-3">
@@ -112,7 +133,9 @@ export default function Home() {
               </span>
               <div>
                 <p className="font-semibold text-blue-900">Receba o parecer</p>
-                <p className="text-gray-600">Fit, gaps e recomendações da IA.</p>
+                <p className="text-gray-600">
+                  Fit, gaps e recomendações da IA.
+                </p>
               </div>
             </li>
             <li className="flex gap-3">
@@ -120,8 +143,12 @@ export default function Home() {
                 4
               </span>
               <div>
-                <p className="font-semibold text-blue-900">Consulte históricos</p>
-                <p className="text-gray-600">Tudo salvo para auditoria e comparações futuras.</p>
+                <p className="font-semibold text-blue-900">
+                  Consulte históricos
+                </p>
+                <p className="text-gray-600">
+                  Tudo salvo para auditoria e comparações futuras.
+                </p>
               </div>
             </li>
           </ol>

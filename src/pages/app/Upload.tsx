@@ -24,8 +24,8 @@ export default function Upload() {
       <section className="px-4 md:px-10 py-16 bg-gradient-to-br from-blue-50 via-white to-indigo-50 min-h-[70vh] flex items-center">
         <div className="max-w-xl mx-auto space-y-4">
           <p className="text-sm text-red-700 bg-red-50 border border-red-100 rounded-lg px-4 py-3">
-            Nenhuma vaga foi informada. Volte e preencha a descrição da vaga antes
-            de enviar um currículo.
+            Nenhuma vaga foi informada. Volte e preencha a descrição da vaga
+            antes de enviar um currículo.
           </p>
           <Link
             to="/vaga"
@@ -43,7 +43,10 @@ export default function Upload() {
       setErro(null);
       setStatus("Enviando currículo e analisando com IA...");
 
-      const analise: AnaliseIA = await talentMatchService.analisarPdf(file, vaga);
+      const analise: AnaliseIA = await talentMatchService.analisarPdf(
+        file,
+        vaga
+      );
 
       const id = crypto.randomUUID();
       const registro = {
@@ -88,7 +91,8 @@ export default function Upload() {
                 Faça o upload do currículo
               </h1>
               <p className="text-gray-700 max-w-2xl">
-                Envie o PDF do candidato para a IA gerar o parecer. Apenas .pdf são aceitos.
+                Envie o PDF do candidato para a IA gerar o parecer. Apenas .pdf
+                são aceitos.
               </p>
             </div>
           </div>
@@ -124,7 +128,9 @@ export default function Upload() {
 
           <div className="space-y-4">
             <div className="bg-white border border-blue-100 rounded-2xl shadow-md p-6">
-              <p className="text-sm font-semibold text-blue-900">Requisitos do arquivo</p>
+              <p className="text-sm font-semibold text-blue-900">
+                Requisitos do arquivo
+              </p>
               <ul className="mt-3 space-y-2 text-sm text-gray-600">
                 <li>• Formato PDF.</li>
                 <li>• Texto legível (evite imagens escaneadas).</li>
@@ -132,7 +138,9 @@ export default function Upload() {
               </ul>
             </div>
             <div className="bg-white border border-blue-100 rounded-2xl shadow-md p-6">
-              <p className="text-sm font-semibold text-blue-900">Dicas de envio</p>
+              <p className="text-sm font-semibold text-blue-900">
+                Dicas de envio
+              </p>
               <ul className="mt-3 space-y-2 text-sm text-gray-600">
                 <li>• Garanta que o currículo está atualizado.</li>
                 <li>• Destaque experiências alinhadas à vaga.</li>

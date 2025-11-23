@@ -30,7 +30,9 @@ export default function AnalysisCard({ item }: Props) {
         </div>
 
         <div className="flex flex-col items-end gap-2">
-          <span className={`px-2.5 py-1 rounded-full text-xs font-semibold ${corScore}`}>
+          <span
+            className={`px-2.5 py-1 rounded-full text-xs font-semibold ${corScore}`}
+          >
             {analise.score_percent}% • {analise.nivel_compatibilidade}
           </span>
           <Link

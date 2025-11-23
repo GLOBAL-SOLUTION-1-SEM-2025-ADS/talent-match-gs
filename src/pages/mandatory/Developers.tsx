@@ -3,13 +3,11 @@ import linkedIn from "../../assets/linkedIn.png";
 import ana from "../../assets/ana.png";
 import gui from "../../assets/gui.jpeg";
 
-
-
 const Developers = () => {
   const integrantes = [
     {
       nome: "Ana Flavia de Freitas",
-      funcao:"Estudante de Analise e Desenvolvimento de Sistemas" ,
+      funcao: "Estudante de Analise e Desenvolvimento de Sistemas",
       rm: "565559",
       turma: "1TDSPK",
       linkedin: "https://www.linkedin.com/in/ana-fl%C3%A1via-de-freitas/",
@@ -18,22 +16,24 @@ const Developers = () => {
     },
     {
       nome: "Luis Guilherme Borges Silva",
-      funcao:"Estudante de Analise e Desenvolvimento de Sistemas" ,
+      funcao: "Estudante de Analise e Desenvolvimento de Sistemas",
       rm: "566548",
       turma: "1TDSPK",
       linkedin: "https://www.linkedin.com/in/luis130505/",
       github: "https://github.com/LuisGdev13",
       foto: gui,
-
     },
-  
   ];
   return (
     <main className="max-w-4xl mx-auto p-6">
       <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-10">
         Desenvolvedores
       </h2>
-      <p className="text-xl  text-center text-gray-500 mb-10">Conheça a equipe por trás do <span className="font-bold">TalentMatch</span>, sua plataforma de análise de currículos inteligente</p>
+      <p className="text-xl  text-center text-gray-500 mb-10">
+        Conheça a equipe por trás do{" "}
+        <span className="font-bold">TalentMatch</span>, sua plataforma de
+        análise de currículos inteligente
+      </p>
 
       <section className="grid gap-8">
         {integrantes.map((dev, index) => (

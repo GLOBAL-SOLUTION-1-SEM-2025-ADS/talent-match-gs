@@ -39,8 +39,8 @@ const Sac = ({ buttonText }: Props) => {
               Fale com a gente e receba um retorno rápido.
             </h2>
             <p className="text-white/80 text-lg">
-              Estamos prontos para ajudar com dúvidas sobre a plataforma, integrações
-              e parcerias. Responderemos em até 1 dia útil.
+              Estamos prontos para ajudar com dúvidas sobre a plataforma,
+              integrações e parcerias. Responderemos em até 1 dia útil.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-[1.1fr_1.3fr] gap-4">
               <div className="bg-white/10 border border-white/20 rounded-2xl p-4">
@@ -53,7 +53,9 @@ const Sac = ({ buttonText }: Props) => {
                 <p className="text-xs uppercase tracking-wide text-white/70">
                   Parcerias
                 </p>
-                <p className="text-sm font-semibold">parcerias@talentmatch.com</p>
+                <p className="text-sm font-semibold">
+                  parcerias@talentmatch.com
+                </p>
               </div>
             </div>
             <div className="flex items-center gap-3 text-white/85 text-sm">
@@ -72,7 +74,8 @@ const Sac = ({ buttonText }: Props) => {
                   Envie sua mensagem
                 </h3>
                 <p className="text-gray-600">
-                  Retornaremos assim que possível. Campos marcados são obrigatórios.
+                  Retornaremos assim que possível. Campos marcados são
+                  obrigatórios.
                 </p>
               </div>
               {messageSucessful && (
@@ -82,9 +85,14 @@ const Sac = ({ buttonText }: Props) => {
               )}
             </div>
 
-            <form onSubmit={handleSubmit(enviarFormulario)} className="space-y-5">
+            <form
+              onSubmit={handleSubmit(enviarFormulario)}
+              className="space-y-5"
+            >
               <div className="space-y-2">
-                <label className="block font-semibold text-gray-800">Nome</label>
+                <label className="block font-semibold text-gray-800">
+                  Nome
+                </label>
                 <input
                   type="text"
                   {...register("name")}
@@ -101,7 +109,9 @@ const Sac = ({ buttonText }: Props) => {
               </div>
 
               <div className="space-y-2">
-                <label className="block font-semibold text-gray-800">Email</label>
+                <label className="block font-semibold text-gray-800">
+                  Email
+                </label>
                 <input
                   type="email"
                   {...register("email")}
@@ -118,7 +128,9 @@ const Sac = ({ buttonText }: Props) => {
               </div>
 
               <div className="space-y-2">
-                <label className="block font-semibold text-gray-800">Mensagem</label>
+                <label className="block font-semibold text-gray-800">
+                  Mensagem
+                </label>
                 <textarea
                   {...register("message")}
                   className={`w-full rounded-xl border p-3.5 min-h-[140px] bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 transition ${
@@ -129,7 +141,9 @@ const Sac = ({ buttonText }: Props) => {
                   placeholder="Conte como podemos ajudar"
                 />
                 {errors.message && (
-                  <p className="text-red-500 text-sm">{errors.message.message}</p>
+                  <p className="text-red-500 text-sm">
+                    {errors.message.message}
+                  </p>
                 )}
               </div>
 

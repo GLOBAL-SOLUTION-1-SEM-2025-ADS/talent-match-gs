@@ -33,8 +33,9 @@ export default function Vaga() {
                 Descreva a vaga
               </h1>
               <p className="text-gray-700 max-w-2xl">
-                Quanto mais detalhada a vaga, mais preciso o parecer da IA sobre o currículo.
-                Inclua requisitos, senioridade, tecnologias e contexto do time.
+                Quanto mais detalhada a vaga, mais preciso o parecer da IA sobre
+                o currículo. Inclua requisitos, senioridade, tecnologias e
+                contexto do time.
               </p>
             </div>
           </div>
@@ -53,7 +54,8 @@ export default function Vaga() {
                 Descrição da vaga
               </label>
               <p className="text-sm text-gray-600">
-                Cole o texto da vaga ou escreva em detalhes. Recomendamos ao menos 3-4 linhas para melhor contexto.
+                Cole o texto da vaga ou escreva em detalhes. Recomendamos ao
+                menos 3-4 linhas para melhor contexto.
               </p>
               <textarea
                 value={vaga}
@@ -63,7 +65,13 @@ export default function Vaga() {
               />
               <div className="flex items-center justify-between text-xs text-gray-500">
                 <span>Mínimo recomendado: 20 caracteres</span>
-                <span className={vaga.trim().length >= 20 ? "text-emerald-600 font-semibold" : ""}>
+                <span
+                  className={
+                    vaga.trim().length >= 20
+                      ? "text-emerald-600 font-semibold"
+                      : ""
+                  }
+                >
                   {vaga.trim().length} caracteres
                 </span>
               </div>
@@ -81,7 +89,9 @@ export default function Vaga() {
 
           <div className="space-y-4">
             <div className="bg-white border border-blue-100 rounded-2xl shadow-md p-6">
-              <p className="text-sm font-semibold text-blue-900">Dicas rápidas</p>
+              <p className="text-sm font-semibold text-blue-900">
+                Dicas rápidas
+              </p>
               <ul className="mt-3 space-y-2 text-sm text-gray-600">
                 <li>• Inclua tecnologias essenciais e desejáveis.</li>
                 <li>• Cite senioridade e contexto do time/projeto.</li>
@@ -89,7 +99,9 @@ export default function Vaga() {
               </ul>
             </div>
             <div className="bg-white border border-blue-100 rounded-2xl shadow-md p-6">
-              <p className="text-sm font-semibold text-blue-900">O que analisamos</p>
+              <p className="text-sm font-semibold text-blue-900">
+                O que analisamos
+              </p>
               <ul className="mt-3 space-y-2 text-sm text-gray-600">
                 <li>• Alinhamento técnico com a vaga.</li>
                 <li>• Experiência e senioridade.</li>
