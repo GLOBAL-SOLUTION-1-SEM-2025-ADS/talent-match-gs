@@ -8,9 +8,7 @@ import FilterBar from "../../components/Filterbar";
 
 export default function Historico() {
   const [lista, setLista] = useState<AnaliseComMeta[]>([]);
-  const [status, setStatus] = useState<string | null>(
-    "Carregando histórico..."
-  );
+  const [status, setStatus] = useState<string | null>("Carregando histórico...");
   const [termo, setTermo] = useState("");
   const [dataInicial, setDataInicial] = useState("");
   const [dataFinal, setDataFinal] = useState("");
@@ -53,7 +51,12 @@ export default function Historico() {
 
   if (status) {
     return (
-      <section className="px-4 md:px-10 py-16 bg-gradient-to-br from-blue-50 via-white to-indigo-50 min-h-[70vh] flex items-center">
+      <section
+        className="px-4 md:px-10 py-16 
+        bg-gradient-to-br from-blue-50 via-white to-indigo-50 
+        dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-950 dark:to-black
+        min-h-[70vh] flex items-center"
+      >
         <div className="max-w-xl mx-auto w-full">
           <LoadingStatus mensagem={status} />
         </div>
@@ -62,38 +65,64 @@ export default function Historico() {
   }
 
   return (
-    <section className="px-4 md:px-10 py-16 bg-gradient-to-br from-blue-50 via-white to-indigo-50 min-h-[90vh]">
+    <section
+      className="px-4 md:px-10 py-16 
+      bg-gradient-to-br from-blue-50 via-white to-indigo-50 
+      dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-950 dark:to-black
+      min-h-[90vh]"
+    >
       <div className="max-w-6xl mx-auto space-y-8">
+        {/* Título + Voltar */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
           <div className="flex items-start gap-3">
             <Link
               to="/vaga"
-              className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-blue-100 bg-white text-blue-800 shadow-sm hover:bg-blue-50 transition"
+              className="inline-flex items-center justify-center h-10 w-10 rounded-full 
+                border border-blue-100 dark:border-gray-700 
+                bg-white dark:bg-gray-900 
+                text-blue-800 dark:text-gray-100 
+                shadow-sm hover:bg-blue-50 dark:hover:bg-gray-800 transition"
               aria-label="Voltar para vaga"
             >
               ←
             </Link>
+
             <div className="space-y-2">
-              <div className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wide bg-white border border-blue-100 text-blue-800 rounded-full shadow-sm">
+              <div
+                className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wide 
+                bg-white dark:bg-gray-900 
+                border border-blue-100 dark:border-gray-700 
+                text-blue-800 dark:text-indigo-300 
+                rounded-full shadow-sm"
+              >
                 Histórico
                 <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
               </div>
-              <h1 className="text-3xl md:text-4xl font-bold text-blue-900">
+
+              <h1 className="text-3xl md:text-4xl font-bold text-blue-900 dark:text-gray-100">
                 Pareceres anteriores
               </h1>
-              <p className="text-gray-700">
-                Consulte e filtre análises já realizadas. Use termo de busca ou
-                intervalo de datas.
+
+              <p className="text-gray-700 dark:text-gray-300">
+                Consulte e filtre análises já realizadas. Use termo de busca ou intervalo de datas.
               </p>
             </div>
           </div>
-          <div className="text-sm text-gray-600">
+
+          <div className="text-sm text-gray-600 dark:text-gray-300">
             Total de análises:{" "}
-            <span className="font-semibold text-blue-900">{lista.length}</span>
+            <span className="font-semibold text-blue-900 dark:text-indigo-300">
+              {lista.length}
+            </span>
           </div>
         </div>
 
-        <div className="bg-white border border-blue-100 rounded-3xl shadow-lg p-4 md:p-6">
+        {/* Filtro */}
+        <div
+          className="bg-white dark:bg-gray-900 
+          border border-blue-100 dark:border-gray-700 
+          rounded-3xl shadow-lg p-4 md:p-6"
+        >
           <FilterBar
             termo={termo}
             onTermoChange={setTermo}
@@ -104,8 +133,13 @@ export default function Historico() {
           />
         </div>
 
+        {/* Lista */}
         {filtrados.length === 0 ? (
-          <div className="bg-white border border-blue-100 rounded-2xl shadow-md p-6 text-sm text-gray-600">
+          <div
+            className="bg-white dark:bg-gray-900 
+            border border-blue-100 dark:border-gray-700 
+            rounded-2xl shadow-md p-6 text-sm text-gray-600 dark:text-gray-300"
+          >
             Nenhum parecer encontrado com os filtros atuais.
           </div>
         ) : (

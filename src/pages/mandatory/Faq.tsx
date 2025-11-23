@@ -44,8 +44,8 @@ export default function Faq() {
 
   return (
     <>
-      <main className="max-w-4xl mx-auto mt-12 p-6">
-        <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-10">
+      <main className="max-w-4xl mx-auto mt-12 p-6 text-gray-900 dark:text-gray-100 transition-colors">
+        <h2 className="text-3xl font-extrabold text-center text-blue-800 dark:text-indigo-200 mb-10">
           Perguntas Frequentes
         </h2>
 
@@ -53,18 +53,24 @@ export default function Faq() {
           {perguntas.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm hover:shadow-md transition"
+              className="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm hover:shadow-md transition dark:bg-gray-900 dark:border-gray-700"
             >
               <button
                 onClick={() => toggleQuestion(index)}
-                className="w-full text-left text-lg font-semibold text-neutral-600 flex justify-between items-center"
+                className="w-full text-left text-lg font-semibold text-neutral-600 dark:text-gray-100 flex justify-between items-center transition-colors"
                 aria-expanded={openIndex === index}
               >
-                <span className={openIndex === index ? "text-blue-700" : ""}>
+                <span
+                  className={
+                    openIndex === index
+                      ? "text-blue-700 dark:text-indigo-200"
+                      : ""
+                  }
+                >
                   {item.pergunta}
                 </span>
                 <span
-                  className={`text-blue-700 text-xl leading-none transition-transform duration-300 ${
+                  className={`text-blue-700 dark:text-indigo-200 text-xl leading-none transition-transform duration-300 ${
                     openIndex === index ? "rotate-45" : ""
                   }`}
                   aria-hidden
@@ -78,7 +84,7 @@ export default function Faq() {
                   openIndex === index ? "max-h-screen mt-3" : "max-h-0"
                 }`}
               >
-                <p className="text-gray-700 bg-gray-50 rounded-xl p-4 text-sm leading-relaxed whitespace-pre-line border border-gray-100">
+                <p className="text-gray-700 dark:text-gray-200 bg-gray-50 dark:bg-gray-800 rounded-xl p-4 text-sm leading-relaxed whitespace-pre-line border border-gray-100 dark:border-gray-700 transition-colors">
                   {item.resposta}
                 </p>
               </div>

@@ -25,11 +25,11 @@ const Developers = () => {
     },
   ];
   return (
-    <main className="max-w-4xl mx-auto p-6">
-      <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-10">
+    <main className="max-w-4xl mx-auto p-6 text-gray-900 dark:text-gray-100 transition-colors">
+      <h2 className="text-3xl font-extrabold text-center text-blue-800 dark:text-indigo-200 mb-10">
         Desenvolvedores
       </h2>
-      <p className="text-xl  text-center text-gray-500 mb-10">
+      <p className="text-xl  text-center text-gray-500 dark:text-gray-300 mb-10 transition-colors">
         Conheça a equipe por trás do{" "}
         <span className="font-bold">TalentMatch</span>, sua plataforma de
         análise de currículos inteligente
@@ -39,20 +39,20 @@ const Developers = () => {
         {integrantes.map((dev, index) => (
           <div
             key={index}
-            className="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition"
+            className="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition dark:bg-gray-900 dark:border-gray-700"
           >
             <img
               src={dev.foto}
               alt={`Foto de ${dev.nome}`}
-              className="w-28 h-28 rounded-full border-2 border-gray-300 object-cover"
+              className="w-28 h-28 rounded-full border-2 border-gray-300 dark:border-gray-700 object-cover"
             />
 
             <article className="text-center sm:text-left flex-1">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2 transition-colors">
                 {dev.nome}
               </h3>
-              <p className="text-sm text-gray-500 mb-4">{dev.funcao}</p>
-              <p className="text-gray-600">
+              <p className="text-sm text-gray-500 dark:text-gray-300 mb-4 transition-colors">{dev.funcao}</p>
+              <p className="text-gray-600 dark:text-gray-300 transition-colors">
                 <strong>RM:</strong> {dev.rm} | <strong>Turma:</strong>{" "}
                 {dev.turma}
               </p>
@@ -62,7 +62,7 @@ const Developers = () => {
                   href={dev.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition"
+                  className="flex items-center gap-2 text-blue-600 hover:text-blue-800 dark:text-indigo-300 dark:hover:text-indigo-200 transition"
                 >
                   <img
                     src={linkedIn}
@@ -74,7 +74,7 @@ const Developers = () => {
                   href={dev.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-800 hover:text-black transition"
+                  className="flex items-center gap-2 text-gray-800 hover:text-black dark:text-gray-200 dark:hover:text-gray-50 transition"
                 >
                   <img
                     src={github}

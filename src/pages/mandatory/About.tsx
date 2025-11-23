@@ -12,10 +12,12 @@ import Impact from "../../assets/icons/impact-icon.svg";
 
 export default function About() {
   return (
-    <div className="space-y-20">
+    <div className="space-y-20 text-gray-900 dark:text-gray-100 transition-colors">
       <section className="  mb-6 py-20 text-center">
-        <h1 className="text-blue-800 text-5xl font-bold">Sobre Nós</h1>
-        <p className=" text-gray-500 mt-8  text-xl max-w-2xl mx-auto">
+        <h1 className="text-blue-800 dark:text-indigo-200 text-5xl font-bold transition-colors">
+          Sobre Nós
+        </h1>
+        <p className=" text-gray-500 dark:text-gray-300 mt-8  text-xl max-w-2xl mx-auto transition-colors">
           Somos uma plataforma de análise inteligente de currículos que combina
           inteligência artificial e experiência em RH para transformar a forma
           como empresas encontram e avaliam talentos.
@@ -96,8 +98,8 @@ export default function About() {
                   </p>
                 </div>
               </div>
-              <div className="bg-white text-blue-900 rounded-2xl p-6 shadow-lg">
-                <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">
+              <div className="bg-white text-blue-900 dark:bg-gray-950 dark:text-gray-100 rounded-2xl p-6 shadow-lg transition-colors">
+                <p className="text-sm font-semibold uppercase tracking-wide text-blue-700 dark:text-indigo-200">
                   O que nos guia
                 </p>
                 <p className="mt-2 text-lg font-semibold">
@@ -111,59 +113,59 @@ export default function About() {
       </section>
 
       <section className="px-4 md:px-20">
-        <h2 className="text-3xl font-semibold text-center mb-10 text-blue-800">
+        <h2 className="text-3xl font-semibold text-center mb-10 text-blue-800 dark:text-indigo-200 transition-colors">
           Nossos Valores
         </h2>
 
-        <div className="max-w-6xl mx-auto rounded-3xl border border-blue-100 bg-gradient-to-br from-slate-50 via-white to-blue-50 shadow-lg">
+        <div className="max-w-6xl mx-auto rounded-3xl border border-blue-100 dark:border-gray-800 bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900 shadow-lg transition-colors">
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8 p-8 md:p-12">
-            <div className="h-full rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-xl transition-all p-7 flex flex-col gap-4">
-              <div className="w-12 h-12 bg-blue-50 text-blue-700 rounded-xl flex items-center justify-center text-2xl">
+            <div className="h-full rounded-2xl border border-slate-100 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-xl transition-all p-7 flex flex-col gap-4">
+              <div className="w-12 h-12 bg-blue-50 text-blue-700 dark:bg-indigo-900/60 dark:text-indigo-200 rounded-xl flex items-center justify-center text-2xl transition-colors">
                 <img src={Mission} alt="missão" className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-semibold mb-2 text-blue-900">
+              <h3 className="text-2xl font-semibold mb-2 text-blue-900 dark:text-gray-100 transition-colors">
                 Nossa Missão
               </h3>
-              <p className="text-gray-700 flex-1 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 flex-1 leading-relaxed transition-colors">
                 Revolucionar o recrutamento com tecnologia de ponta, tornando a
                 seleção de talentos mais eficiente, justa e precisa.
               </p>
             </div>
 
-            <div className="h-full rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-xl transition-all p-7 flex flex-col gap-4">
-              <div className="w-12 h-12 bg-blue-50 text-blue-700 rounded-xl flex items-center justify-center text-2xl">
+            <div className="h-full rounded-2xl border border-slate-100 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-xl transition-all p-7 flex flex-col gap-4">
+              <div className="w-12 h-12 bg-blue-50 text-blue-700 dark:bg-indigo-900/60 dark:text-indigo-200 rounded-xl flex items-center justify-center text-2xl transition-colors">
                 <img src={Innovation} alt="inovação" className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-semibold mb-2 text-blue-900">
+              <h3 className="text-2xl font-semibold mb-2 text-blue-900 dark:text-gray-100 transition-colors">
                 Inovação
               </h3>
-              <p className="text-gray-700 flex-1 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 flex-1 leading-relaxed transition-colors">
                 IA aplicada com propósito: automatizar a triagem e explicar cada
                 recomendação de forma clara.
               </p>
             </div>
 
-            <div className="h-full rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-xl transition-all p-7 flex flex-col gap-4">
-              <div className="w-12 h-12 bg-blue-50 text-blue-700 rounded-xl flex items-center justify-center text-2xl">
+            <div className="h-full rounded-2xl border border-slate-100 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-xl transition-all p-7 flex flex-col gap-4">
+              <div className="w-12 h-12 bg-blue-50 text-blue-700 dark:bg-indigo-900/60 dark:text-indigo-200 rounded-xl flex items-center justify-center text-2xl transition-colors">
                 <img src={Trust} alt="confiança" className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-semibold mb-2 text-blue-900">
+              <h3 className="text-2xl font-semibold mb-2 text-blue-900 dark:text-gray-100 transition-colors">
                 Confiança
               </h3>
-              <p className="text-gray-700 flex-1 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 flex-1 leading-relaxed transition-colors">
                 Segurança de dados como padrão: privacidade, compliance e
                 transparência em cada entrega.
               </p>
             </div>
 
-            <div className="h-full rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-xl transition-all p-7 flex flex-col gap-4">
-              <div className="w-12 h-12 bg-blue-50 text-blue-700 rounded-xl flex items-center justify-center text-2xl">
+            <div className="h-full rounded-2xl border border-slate-100 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-xl transition-all p-7 flex flex-col gap-4">
+              <div className="w-12 h-12 bg-blue-50 text-blue-700 dark:bg-indigo-900/60 dark:text-indigo-200 rounded-xl flex items-center justify-center text-2xl transition-colors">
                 <img src={Impact} alt="impacto" className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-semibold mb-2 text-blue-900">
+              <h3 className="text-2xl font-semibold mb-2 text-blue-900 dark:text-gray-100 transition-colors">
                 Impacto
               </h3>
-              <p className="text-gray-700 flex-1 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 flex-1 leading-relaxed transition-colors">
                 Resultados mensuráveis: menos tempo na triagem e contratações
                 mais alinhadas ao perfil ideal.
               </p>
@@ -187,7 +189,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-indigo-600 text-white text-center py-16">
+      <section className="bg-indigo-600 dark:bg-indigo-800 text-white text-center py-16 transition-colors">
         <h2 className="text-3xl font-semibold mb-4">
           Quer colaborar ou usar nossa API?
         </h2>
