@@ -8,6 +8,7 @@ import Faq from "../pages/mandatory/Faq";
 import Job from "../pages/app/Job";
 import Upload from "../pages/app/Upload";
 import History from "../pages/app/History";
+import Result from "../pages/app/Result";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: "vaga", element: <Job /> },
       { path: "upload", element: <Upload /> },
       { path: "historico", element: <History /> },
+      { path: "analise/:id", element: <Result /> },
     ],
   },
 

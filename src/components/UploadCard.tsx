@@ -21,8 +21,10 @@ export default function UploadCard({ onUpload }: Props) {
 
   return (
     <div
-      className={`border-2 rounded-xl p-10 text-center cursor-pointer bg-white transition-all ${
-        dragging ? "border-indigo-500 bg-indigo-50" : "border-dashed border-gray-300"
+      className={`border-2 rounded-2xl p-10 text-center cursor-pointer bg-gradient-to-br from-slate-50 to-white shadow-sm transition-all ${
+        dragging
+          ? "border-indigo-400 bg-indigo-50"
+          : "border-dashed border-blue-200 hover:border-indigo-300 hover:shadow-md"
       }`}
       onDragOver={(e) => {
         e.preventDefault();
@@ -42,11 +44,14 @@ export default function UploadCard({ onUpload }: Props) {
         input.click();
       }}
     >
-      <p className="text-lg text-gray-800 mb-2">
+      <div className="inline-flex items-center gap-2 px-3 py-1 mb-3 text-xs font-semibold uppercase tracking-wide bg-indigo-50 text-indigo-700 rounded-full border border-indigo-100">
+        PDF
+      </div>
+      <p className="text-lg text-gray-800 mb-2 font-semibold">
         Arraste o currículo em PDF aqui ou clique para selecionar
       </p>
       <p className="text-xs text-gray-500">
-        Apenas <strong>.pdf</strong> • tamanho moderado
+        Apenas <strong>.pdf</strong> • ideal: texto legível • tamanho moderado
       </p>
 
       {fileName && (
