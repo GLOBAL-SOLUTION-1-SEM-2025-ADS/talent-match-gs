@@ -3,6 +3,10 @@ Plataforma web para analisar currículos com IA, comparar com requisitos de vaga
 
 - **Status do projeto:** Em desenvolvimento (MVP funcional)
 
+## DEPLOY
+
+https://talentmatch-ia.vercel.app/
+
 ## Sumário
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
