@@ -1,4 +1,4 @@
-# TalentMatch IA – Auditor de Currículos
+# TalentMatch – Auditor de Currículos
 Plataforma web para analisar currículos com IA, comparar com requisitos de vaga e gerar pareceres claros, com histórico e tema claro/escuro.
 
 - **Status do projeto:** Em desenvolvimento (MVP funcional)
