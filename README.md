@@ -1,73 +1,96 @@
-# React + TypeScript + Vite
+# TalentMatch IA – Auditor de Currículos
+Plataforma web para analisar currículos com IA, comparar com requisitos de vaga e gerar pareceres claros, com histórico e tema claro/escuro.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **Status do projeto:** Em desenvolvimento (MVP funcional)
 
-Currently, two official plugins are available:
+## Sumário
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Como Usar](#como-usar)
+- [Estrutura de Pastas](#estrutura-de-pastas)
+- [Endpoints ou Rotas Principais](#endpoints-ou-rotas-principais)
+- [Autores e Créditos](#autores-e-créditos)
+- [Screenshots / Demonstração](#screenshots--demonstração)
+- [Contato](#contato)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sobre o Projeto
+Aplicação front-end que permite:
+- Descrever uma vaga e enviar um currículo em PDF para análise.
+- Visualizar score de compatibilidade gerado por modelo de Machine Learning, pontos fortes e recomendações geradas por IA.
+- Consultar histórico de pareceres anteriores.
+- Navegar por páginas institucionais (Sobre, FAQ, Desenvolvedores, SAC).
+- Alternar entre tema claro e escuro.
 
-## React Compiler
+## Tecnologias Utilizadas
+- React + TypeScript
+- Vite 
+- React Router DOM 
+- Tailwind CSS 
+- React Hook Form + Zod
+- Python
+- API OPENAI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Instalação
+```bash
+git clone https://github.com/GLOBAL-SOLUTION-1-SEM-2025-ADS/talent-match-gs.git
+cd app_talent_match
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Como Usar
+```bash
+# ambiente de desenvolvimento
+npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# build de produção
+npm run build
+npm run preview
 ```
+Depois de rodar `npm run dev`, acesse o endereço exibido no terminal (por padrão, http://localhost:5173).
+
+## Estrutura de Pastas
+```
+src/
+  components/      # Header, Footer, ThemeToggle, cards e UI reutilizáveis
+  context/         # ThemeContext (tema claro/escuro)
+  layouts/         # Layouts de página
+  pages/           # Páginas institucionais e fluxos do app (vaga, upload, histórico, resultado)
+  routes/          # Definição das rotas com React Router
+  utils/           # Helpers e storage local
+  types/           # Tipagens compartilhadas
+```
+
+## Endpoints ou Rotas Principais
+- `/` – Home
+- `/about` – Sobre
+- `/faq` – Perguntas frequentes
+- `/sac` – Contato/Suporte
+- `/developers` – Equipe do projeto
+- `/vaga` – Descrever vaga e iniciar análise
+- `/upload` – Upload do currículo
+- `/historico` – Listagem de pareceres já gerados
+- `/analise/:id` – Detalhe de um parecer específico
+
+## Autores e Créditos
+- Ana Flavia de Freitas – [LinkedIn](https://www.linkedin.com/in/ana-fl%C3%A1via-de-freitas/) | [GitHub](https://github.com/anafreitas-br)
+- Luis Guilherme Borges Silva – [LinkedIn](https://www.linkedin.com/in/luis130505/) | [GitHub](https://github.com/LuisGdev13)
+
+## Screenshots (telas do app) / Demonstração
+- Home (tema claro)  
+  ![Home tema claro](public/screenshots/home_light.png)
+- Home (tema escuro)  
+  ![Home tema escuro](public/screenshots/home_dark.png)
+- Seleção de vaga e parâmetros  
+  ![Seleção de vaga](public/screenshots/select_job.png)
+- Upload de currículo e status  
+  ![Upload de currículo](public/screenshots/upload.png)  
+  ![Status do upload](public/screenshots/upload_status.png)
+- Resultado da análise de IA  
+  ![Resultado IA](public/screenshots/result_ia.png)
+- Histórico com filtros  
+  ![Histórico filtrado](public/screenshots/historico_filtro.png)
+
+## Contato
+- Suporte/Parcerias: rm565559@fiap.com.br
+- Issues e sugestões: abra uma issue no repositório GitHub.
